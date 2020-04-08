@@ -42,6 +42,10 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
 
+  if ENV['TT_CRASH_REPORTER'] == "TT_CRASH_REPORTER_COUNTLY"
+    s.dependency 'PLCrashReporter', '~>1.4.0'
+  end
+
   s.subspec 'NotificationService' do |ns|
     ns.source_files = 'CountlyNotificationService.{m,h}'
   end
