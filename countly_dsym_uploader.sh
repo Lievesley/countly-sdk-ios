@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/bin/bash
 
 # countly_dsym_uploader.sh
 #
